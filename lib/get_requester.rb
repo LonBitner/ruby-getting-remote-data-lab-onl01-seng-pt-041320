@@ -6,6 +6,9 @@ require 'json'
 class GetRequester
 attr_accessor :url
 
+def initialize(url)
+    @url = url
+end
 
 url = "https://learn-co-curriculum.github.io/json-site-example/endpoints/people.json."
 
