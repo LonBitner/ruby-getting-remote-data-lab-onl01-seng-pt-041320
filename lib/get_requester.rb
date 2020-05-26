@@ -14,7 +14,7 @@ end
 def get_response_body
 uri = URI.parse(@url)
 response = Net::HTTP.get_respones(uri)
-JSON.parse(response.body)
+response.body
 end
 
 
