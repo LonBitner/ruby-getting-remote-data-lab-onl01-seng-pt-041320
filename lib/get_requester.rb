@@ -4,19 +4,20 @@ require 'json'
 
 
 class GetRequester
-attr_accessor :url
+  attr_accessor :url
 
-def initialize(url)
+  def initialize(url)
     @url = url
-end
+  end
 
-url = "https://learn-co-curriculum.github.io/json-site-example/endpoints/people.json."
+  url = "https://learn-co-curriculum.github.io/json-site-example/endpoints/people.json."
 
   def get_response_body
   uri = URI.parse(url)
+  uri.open.string
   response = Net::HTTP.get_response(uri)
   JSON.parse(response.body)
-end
+  end
 
 
 end
