@@ -2,6 +2,6 @@
 class GetRequester
   
   URL = 
-  
+end
   
 end
