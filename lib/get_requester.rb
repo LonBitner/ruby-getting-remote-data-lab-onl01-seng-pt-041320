@@ -1,7 +1,7 @@
 require 'open-uri'
 require 'net/http'
 require 'json'
-require 'relative'
+
 
 
 class GetRequester
