@@ -13,7 +13,7 @@ end
 
 def get_response_body
 uri = URI.parse(@url)
-response = NET::HTTP.get_respones(uri)
+response = Net::HTTP.get_respones(uri)
 JSON.parse(response.body)
 end
 
