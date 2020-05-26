@@ -4,7 +4,7 @@ require 'json'
 
 
 
-class GetRequester.parse_json
+class GetRequester
   attr_accessor :url
 
   def initialize(url)
